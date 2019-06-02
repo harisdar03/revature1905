@@ -1,0 +1,68 @@
+/*this is how to write a comment in a css file*/
+/*our css file will be a series of selectors
+    each one match with a rule set*/
+
+/*the syntax is: [selector] {[rule];[rule];}*/
+/*selects all p elements and turns them blue*/
+p{
+    color: blue
+}
+
+/*styles everything in the class item*/
+.item {
+        text-decoration: underline;
+}
+
+/*styles the element with the id unique_div*/
+#unique_div{
+    font-weight: 400;
+    background-color: yellow
+}
+
+.second-class{
+    border: 2px dashed black;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*this rule will be applied to li elements that have class iem*/
+li.item{
+    /*we can manually specify the different sides of padding or margin*/
+    border:2px dotted black;
+    /*padding: 60px 40px 20px 0px;
+    /* the above is the same as */
+    /*
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;*/
+}
+
+
+
+/*conflicting rules are resolved according to specificity:
+    1. inline style (dont do it)
+    2. id
+    3. class
+    4. element
+    also combinations are more specific than single selectors */
+
+li{
+        border:5px dotted black;
+}
+
+/*ancestor descendent*/
+
+ul li {
+    background-color:hotpink;
+}
+
+div p{
+    background-color: hotpink;
+}
+
+/*some good practical rules:
+    organize your css file so that you never have to search for mor/less specific tags
+    dont use inline style. and try to have clear demarcations of styling in what file
+    you can use !important by a rule to ensure it is followed, but its also bad practice*/
+

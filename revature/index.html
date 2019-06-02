@@ -1,0 +1,209 @@
+<!-- HTML syntax for comments-->
+<!--Ctrl + / tp toggle comments-->
+
+<!-- We'll be using HTML5-->
+<!--to let the browser know that we start off with:-->
+<!DOCTYPE html>
+
+<!--The root tag of any html document is: -->
+<html>
+
+<!-- tags: 
+        Tags are how we define ELEMENTS in our HTML
+        opening tag is <element>
+        closing tag is </element>-->
+       
+        <!-- inside of html element, we'll have two
+        other elements: head and body-->
+
+        <head>
+            <!--inside our head goes metadata:
+            data about the document's contents-->
+            <!--first (by convention)we put things 
+                about the html document in meta tags-->
+
+                <meta charset="utf-8"/>
+                <!-- we just saw 2 new things in that meta tag.
+                First, it has a slash inside it and no closing tag
+                Tags like this are called "self closing"
+                Second, this tag has an attribute (charset)
+                attributes describe or change things about elements. 
+                In this case, we say this document will be using the
+                character set UTF-8 (standard unicode)-->
+
+                <!--title provides the name of the tab/window-->
+                <title> Our Page! </title>
+
+                <!-- we can add some other meta information:
+                    application-name,
+                    author,
+                    description,
+                    keywords (used to be used for search engine optimization)
+                -->
+        </head>
+
+        <body>
+            <!-- inside the body goes the actual content-->
+
+            <!-- Whitespace in HTML doesn't matter-->
+            Hello,          Revature!
+
+            <!-- Let's start using elemnts in the body-->
+            <!-- the <p> tag represents a paragraph-->
+                <p>Hello from inside the 'p' tag</p>
+            
+            <!-- there are six header tags: -->
+                <h1>From big</h1>
+                <h6>to small</h6>
+
+            <!-- THe img tag needs a src(source) attribute
+            You can also provide alt-text if the image isnt 
+            with the alt attribute-->
+                <img src='https://blogmedia.dealerfire.com/wp-content/uploads/sites/673/2018/08/Lamborghini-Aventador-SVJ-green-side-view-in-a-garage_o.jpg'/>
+                
+            <!-- A very important piece of early websites
+            was the hyperlink. We build those with "anchor"
+            elements, or the <a> tag -->
+                <a href="https://google.com">Link to Google</a>
+
+            <!--there are many types of lists and other
+            structured content in HTML:-->
+            <!--Ordered Lists (numbered) -->
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            
+            <!-- similarly, we have unordered lists: -->
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                </ul>
+            
+            <!-- tables: -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Data A</td>
+                            <td>Data B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            <!-- line breaks-->
+                Hello,<br>Revature!
+            
+            <!--We have some ways of marking text as important-->
+                <p>
+                    this is <em>emphasized</em>,<br>
+                    this is <strong>strong</strong>,<br>
+                    this is <u>underlined</u>
+
+                </p>
+
+                <blockquote>
+                    Indented (by default) quotation
+                </blockquote>
+                
+            <!--We have block elemnts that own their own 
+                vertical space: p, ol, ul, table-->
+                <!--We have inline elemnts that don't:
+                strong,em,a,...-->
+
+            <!--There are 2 generic elements-->
+                    <div>
+                        div is a block generic element
+                    </div>
+                    
+                    <span>
+                        span is an inline generic element
+                    </span>
+            
+            <!-- select list: this makes a dropdown-->
+                    <select>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+            
+            <!-- some new HTML5 elements-->
+                <!--first are the "flash-replacement" elements: -->
+                <video controls="controls"></video>
+                <!--the video element provides native support for video
+                    in HTML5. It lets browsers use approprriate video codecs.
+                    You can specify more than one source file-->
+                <audio controls ="controls"></audio>
+                <!-- the audio element is similar to the video element, but with audio! Specify src-->
+                <canvas></canvas>
+                <!-- canvas lets you make an interavtive and/or animated graphic-->
+
+                <!--HTML5 also added semantic tags-->
+                <!--before HTML5 common practice had lots of tags like <div class="section">, 
+                    or <div class="footer+>-->
+                        <section></section>
+                        <header></header>
+                        <nav></nav>
+                        <main></main>
+                        <aside></aside>
+
+                    <!-- these are very goof to use in practical web development
+                        they make the meaning of you tags more clear-->
+
+            <!-- one more big piece of html to know-->
+            <!-- forms!-->
+            <!--forms let you make bsic HTTP requests -->
+            <!--you can GET and POST. GET request goes to a url and has no body-->
+            <!-- Form parameters are attached at the end of the end of the url in a query string-->
+                <form method= "GET" action="https://google.com/search">
+                    <!-- input elments provide a key value pair
+                    that is submtted witht the form. The key comes from the 
+                    'name attribute.' Valuse is the user input-->
+                    <input type="color" name="color">
+                    <input type ="text" name="q">
+
+                    <!-- special case: no k-v pair-->
+                    <input type="submit">
+                </form>
+
+            <!-- we can also send POST requests with forms. 
+                These don't have a query string; 
+                instead they hav key-value pairs in the request body-->
+                <form method="POST">
+                    <!--some input examples-->
+                    <input type="number" name="num">
+                    <input type="checkbox" name="check">
+
+                    <label>Upload file:
+                        <input type="file" name="file">
+                    </label>
+                    
+                    <label for="user">Username: </label>
+                        <input type="text" name="user">
+                    <label for ="pass">Password: </label>    
+                        <input type="password" name="password">
+
+                    <label>Option 1:
+                        <input type ="radio"name="which" value="1">
+                    </label>
+                        <input type ="radio"name="which" value="2">
+                        <input type ="radio"name="which" value="3">
+
+                    <!--plain text is also supported in HTML5-->
+                    One more thing:
+                    <input type="text" placeholder="placeholder_text"
+                        required minlength="4" maxlength="10">
+
+                </form>
+        </body>
+</html>

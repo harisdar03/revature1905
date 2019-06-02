@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Form Examples Using GET and POST Requests</title>
+</head>
+
+<body>
+        <div class="col-12">
+            <div class="row text-center">
+            <div class="col-2"></div>
+            <div class="col-2 background-color"><a href="index.html">Home</a></div>
+            <div class="col-2 background-color"><a href="page2.html">Elements</a></div>
+            <div class="col-2 background-color"><a href="page3.html">Get & Post</a></div>
+            <div class="col-2 background-color"><a href="page4.html">Input Type</a></div>
+            <div class="col-2"></div>
+        </div>
+
+        <!--SPACING-->
+        <div class="pr-5"><br></div>
+        <div class="pr-5"><br></div>
+
+        <div class="row">
+                <div class="col-4"></div>
+                    <div class="col-4 text-center">
+                            <h1>HTML Form Using a GET Request</h1>
+        <p>
+            Below is an example of an HTML Form using a basic GET Request.<br>
+            In this example, we will create a form in which a user can enter an 
+            input and a GET request is sent to <a href="google.com">google.com</a>. <br>
+    
+            After the user clicks submit, the user is redirected to a google search correspinding to
+            their input.
+        </p>
+        <form method= "GET" action="https://google.com/search">
+            <input type="text" name=q>
+            <input type="submit">
+        </form>
+        
+        
+        <!--SPACING-->
+        <div class="pr-5"><br></div>
+        <div class="pr-5"><br></div>
+        
+    
+        <h1>HTML Form Using a POST Request</h1>
+        <p>
+            Below is an example of an HTML Form using a POST Request.  <br>
+            The user is asked for their username and password and then that data is sent to a server<br>
+            In a more advanced application, the server would then access a database to verify the username and password that was entered.<br>
+    
+            
+    
+        </p>
+        
+        <form method="POST" action="https://google.com/search">
+           <label>Username: 
+                <input type="text" name="email">
+           </label> 
+           <label>Password:
+                <input type="password" name="password">
+           </label>
+            <input type="submit">
+        </form>
+                    </div>
+                <div class="col-4"></div>
+            </div>
+            <!--SPACING-->
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+
+        
+    
+</body>
+</html>

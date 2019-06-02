@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>HTML Form Elements</title>
+</head>
+
+<body>
+    <div class="col-12">
+        <div class="row text-center">
+        <div class="col-2"></div>
+        <div class="col-2 background-color"><a href="index.html">Home</a></div>
+        <div class="col-2 background-color"><a href="page2.html">Elements</a></div>
+        <div class="col-2 background-color"><a href="page3.html">Get & Post</a></div>
+        <div class="col-2 background-color"><a href="page4.html">Input Type</a></div>
+        <div class="col-2"></div>
+    </div>
+        <!--SPACING-->
+        <div class="pr-5"><br></div>
+        <div class="pr-5"><br></div>
+        <div class="row">
+                <div class="col-4"></div>
+                    <div class="col-4 text-center">
+                        <h1>Different Types of Form Elements</h1>
+                        <!--SPACING-->
+                        <div class="pr-5"><br></div>
+                        <div class="pr-5"><br></div>
+                            <h3>Select</h3>
+                                        
+                                <p>This element creates a drop down menu that in which a
+                                     user can select predetermined options</p>
+                                <p class="important">Example</p>
+                                <blockquote><form method="GET">
+                                <select name="Options">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                </form></blockquote>
+                                        
+                            <h3>Textarea</h3>
+                                        
+                                <p>This element creates a textbox that allows for multi line input,
+                                    and the size of the text box can be specified </p>
+                                <p class="important">Example</p>
+                                <blockquote>
+                                        <textarea name="message" rows=5 columns=30></textarea>
+                                </blockquote>
+                                <h3>Button</h3>
+                                        
+                                <p>This element creates a clickable button on the form</p>
+                                <p class="important">Example</p>
+                                <blockquote>
+                                    <button id="clickableBtn" name="button">Click Me!</button>
+                                </blockquote>
+                                <p id="BtnTxt"></p>
+                                <p id="otherTxt"      ></p>
+                                
+                                <!--SPACING-->
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                <div class="pr-5"><br></div>
+                                        
+                            
+                                        
+                                        
+                            <h2>Examples of Input Elements</h2>
+                                <h3>Radio</h3>
+                                        
+                                    <p>This element creates radio buttons that can be clicked by the user to choose an option</p>
+                                    <p class="important">Example</p>
+                                    <blockquote>
+                                    <label> Option 1
+                                        <input type="radio" name="which" value="1"></input>
+                                    </label>  
+                                    <label>Option 2
+                                        <input type="radio" name="which" value="2"></input>
+                                    </label>Option 3
+                                        <input type="radio" name="which" value="3"></input>
+                                    </blockquote>
+                                        
+                            <h3>Checkbox</h3>
+                                    
+                                <p>This element creates a box that is checked once clicked</p>
+                                <p class="important">Example</p>
+                                <blockquote>
+                                <label>Click box for Yes!
+                                    <input type="checkbox" name="chkbox">
+                                </label>
+                                </blockquote>
+
+                    </div>
+                <div class="col-4"></div>
+            </div>
+            <!--SPACING-->
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+            <div class="pr-5"><br></div>
+        
+            <div class="row">
+                    <div class="col-4"></div>
+                        <div class="col-4 text-center">
+                                <h3>Color</h3>
+                                <p>A user can be asked to input a choice of color</p>
+                                <input type="color" name="color"><br><br>
+
+                                <!--password-->
+                    <h3>Password</h3>
+                    <p>The password input type hides the characters of the input from the user</p>
+                    <input type="password" name="pwd"><br><br>
+                
+        
+                <!--reset-->
+                
+                    <h3>Reset</h3>
+                    <p>The reset input type will reset the form values back to a set default</p>
+                    <form>
+                    <label>First Name:
+                        <input type="text" name="firstname" placeholder="Info here">
+                    </label><br>
+                    <label>Last Name:
+                        <input type="text" name="firstname" placeholder="Info here">
+                    </label>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+                        </div>
+                    <div class="col-4"></div>
+                </div>
+                <!--SPACING-->
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+                <div class="pr-5"><br></div>
+            
+                   
+                
+                
+                
+
+
+
+</body>
+<script src="page2DOM.js"></script>
+</html>
